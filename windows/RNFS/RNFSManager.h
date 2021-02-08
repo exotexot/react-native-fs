@@ -91,6 +91,12 @@ struct RNFSManager final
     REACT_METHOD(exists); // Implemented
     void exists(std::string fullpath, RN::ReactPromise<bool> promise) noexcept;
 
+    //REACT_METHOD(exists2); // Implemented
+    //void exists2(std::string fullpath, RN::ReactPromise<bool> promise) noexcept;
+
+    REACT_METHOD(exists2); // Implemented
+    winrt::fire_and_forget exists2(std::string filePath, RN::ReactPromise<bool> promise) noexcept;
+
     REACT_METHOD(stopDownload); // DOWNLOADER
     void stopDownload(int jobID) noexcept;
 

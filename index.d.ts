@@ -131,6 +131,7 @@ export function getFSInfo(): Promise<FSInfoResult>
 export function getAllExternalFilesDirs(): Promise<string[]>
 export function unlink(filepath: string): Promise<void>
 export function exists(filepath: string): Promise<boolean>
+export function exists2(filepath: string): Promise<boolean>
 
 export function stopDownload(jobId: number): void
 
